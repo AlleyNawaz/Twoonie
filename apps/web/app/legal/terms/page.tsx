@@ -20,7 +20,7 @@ export default function TermsPage() {
               <p>By accessing and using Twoonie, you accept and agree to be bound by the terms and provision of this agreement. In addition, when using these particular services, you shall be subject to any posted guidelines or rules applicable to such services.</p>
 
               <h2 style={{ color: "var(--text-primary)", fontSize: "20px", marginTop: "16px" }}>2. Description of Service</h2>
-              <p>Twoonie provides users with a platform that rounds up daily purchases and invests the spare change into cryptocurrencies via the Solana blockchain. You understand and agree that the Service is provided "AS-IS".</p>
+              <p>Twoonie provides users with a platform that rounds up daily purchases and invests the spare change into cryptocurrencies via the Solana blockchain. You understand and agree that the Service is provided &quot;AS-IS&quot;.</p>
 
               <h2 style={{ color: "var(--text-primary)", fontSize: "20px", marginTop: "16px" }}>3. Risks of Investing</h2>
               <p>All investments, including cryptocurrency, involve risk. Twoonie does not provide financial advice, and you are responsible for any risks associated with investing on the platform.</p>
