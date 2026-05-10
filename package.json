@@ -17,5 +17,12 @@
     "node": "20.x",
     "pnpm": ">=9"
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bufferutil",
+      "utf-8-validate",
+      "unrs-resolver"
+    ]
+  }
 }
