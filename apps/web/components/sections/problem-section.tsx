@@ -25,7 +25,7 @@ export function ProblemSection() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }} className="stats-grid">
           {STATS.map((stat, i) => (
             <SectionReveal key={stat.label} delay={i * 120}>
-              <div className="glass-card" style={{ padding: "40px 32px", textAlign: "center" }}
+              <div className="glass-card"
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)";
                   (e.currentTarget as HTMLElement).style.boxShadow = "0 0 40px var(--accent-glow), 0 8px 32px rgba(0,0,0,0.30)";
