@@ -1,0 +1,21 @@
+{
+  "name": "twoonie",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "seed:demo": "pnpm --filter @twoonie/db seed:demo"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
