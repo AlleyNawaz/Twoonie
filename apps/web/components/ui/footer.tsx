@@ -35,12 +35,17 @@ export function Footer() {
           {/* Product */}
           <div>
             <h4 style={{ fontSize: "12px", fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "16px" }}>Product</h4>
-            {["How it works", "Pricing", "Demo", "Dashboard"].map((item) => (
-              <div key={item} style={{ marginBottom: "10px" }}>
-                <Link href={`/${item.toLowerCase().replace(/ /g, "-")}`} style={{ fontSize: "14px", color: "var(--text-secondary)", textDecoration: "none" }}
+            {[
+              { label: "How it works", href: "/#how-it-works" },
+              { label: "Pricing", href: "/#pricing" },
+              { label: "Demo", href: "/demo" },
+              { label: "Dashboard", href: "/dashboard" },
+            ].map((item) => (
+              <div key={item.label} style={{ marginBottom: "10px" }}>
+                <Link href={item.href} style={{ fontSize: "14px", color: "var(--text-secondary)", textDecoration: "none" }}
                   onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "var(--text-primary)")}
                   onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "var(--text-secondary)")}
-                >{item}</Link>
+                >{item.label}</Link>
               </div>
             ))}
           </div>
@@ -50,8 +55,8 @@ export function Footer() {
             <h4 style={{ fontSize: "12px", fontWeight: 600, color: "var(--text-tertiary)", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "16px" }}>Resources</h4>
             {[
               { label: "Docs", href: "/docs" },
-              { label: "GitHub", href: "https://github.com/twoonie-app/twoonie" },
-              { label: "Twitter", href: "https://twitter.com/twoonie_app" },
+              { label: "GitHub", href: "https://github.com/AlleyNawaz/Twoonie" },
+              { label: "Twitter", href: "https://x.com/Alidotjs/status/2053430389226836120?s=20" },
               { label: "About", href: "/about" },
             ].map((item) => (
               <div key={item.label} style={{ marginBottom: "10px" }}>
